@@ -1,7 +1,12 @@
 package de.dhbw.menu;
 
+import javax.swing.JFrame;
+
 public class ScreenController {
 
+	
+	private static StartMenu menu;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -17,8 +22,15 @@ public class ScreenController {
 
 		screen.dispose();
 		
-		StartMenu menu = new StartMenu();
+		menu = new StartMenu();
 		menu.setVisible(true);
+		
+	}
+
+	public static void removeMenu() {
+		// TODO Auto-generated method stub
+	
+		menu.dispose();
 		
 	}
 

@@ -28,16 +28,15 @@ import de.dhbw.game.ui.Interface;
 import de.dhbw.game.ui.Inventory;
 import de.dhbw.game.ui.PlayerStats;
 import de.dhbw.game.ui.TextBox;
-import de.dhbw.menu.StartMenu;
 
 public class Game extends Canvas implements Runnable {
 
 	private static final long serialVersionUID = 1L;
 	
 	//------------------GRUNDEINSTELLUNGEN-------------------------------
-	public static final int WIDTH = 120;
+	public static final int WIDTH = 720;
 	public static final int HEIGHT = WIDTH / 16 * 9;
-	public static final int SCALE = 1;
+	public static final int SCALE = 10;
 	public static final String NAME = "Game";
 	
 	public int mapsize = 256*8;
@@ -317,4 +316,11 @@ public class Game extends Canvas implements Runnable {
 		
 		
 	}
+	
+	
+	public static void main(String[] args) {
+		
+		new Game().start();
+	}
+	
 }

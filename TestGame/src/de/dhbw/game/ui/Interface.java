@@ -16,6 +16,8 @@ public class Interface {
 	private Screen screen;
 	private int xPos;
 	private int yPos;
+	private int xPos2;
+	private int yPos2;
 	private int pixelWidth;
 	private int pixelHeight;
 	private Player player;
@@ -157,9 +159,9 @@ public void renderBox() {
 	//Die angegebene X-Koordinate ist die obere linke Koordinate der Box
 			int xPos1 = xPos;
 			//Obere linke Ecke + Boxbreite mal 8 (weil 8x8 Pixel) minus 8 (da die Gesamtbreite angegeben ist)
-			int xPos2 = xPos - 8 + pixelWidth * 8;
+			 xPos2 = xPos - 8 + pixelWidth * 8;
 			int yPos1 = yPos;
-			int yPos2 = yPos - 8 + pixelHeight * 8;
+			 yPos2 = yPos - 8 + pixelHeight * 8;
 			
 		
 			
@@ -246,6 +248,22 @@ public void renderBox() {
 		return xPos;
 	}
 	
+	public int getY() {
+		// TODO Auto-generated method stub
+		return yPos;
+	}
+	
+	
+	public int getX2() {
+		
+		return xPos2;
+	}
+	
+	public int getY2() {
+		
+		return yPos2;
+	}
+	
 	public static void addUi(Interface uiarr) {
 		
 		Interface.uiarr.add(uiarr);
@@ -284,5 +302,7 @@ public void renderBox() {
 		
 		
 	}
+
+	
 
 }

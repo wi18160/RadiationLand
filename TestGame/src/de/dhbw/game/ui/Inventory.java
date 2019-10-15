@@ -25,7 +25,7 @@ public class Inventory extends Interface{
 	private int timer;
 	public static InputHandler input = Game.input;
 	private boolean render = true;
-	
+
 	
 	public Inventory(Screen screen, Player player, int xPos, int yPos, int pixelWidth, int pixelHeight, int TileTopBottomIndex,
 			int TileLeftRightIndex, int TileFillIndex, int Color, boolean fill, String header) {
@@ -107,6 +107,7 @@ public class Inventory extends Interface{
 //		}
 		
 		renderBox();
+		addItem();
 		
 		
 	}
@@ -129,5 +130,45 @@ public class Inventory extends Interface{
 		}
 		
 	}
+	
+	
+
+	
+	public void addItem() {
+		
+		
+		String items[] = new String[11];
+		
+		items[0] = "Item 0";
+		items[1] = "Item 1";
+		items[2] = "Item 2";
+		items[3] = "Item 3";
+		items[4] = "Item 4";
+		items[5] = "Item 5";
+		items[6] = "Item 6";
+		items[7] = "Item 7";
+		items[8] = "Item 8";
+		items[9] = "Item 9";
+		items[10] = "Item 10";
+		
+		
+	
+		
+		//Anzahl der Items berechnen, die in die Boxhöhe passen 
+		int invspace = ((this.pixelHeight * 8) - 32) / 8;
+		int itemss = items.length;
+		
+		
+
+		for(int i = 0; i<itemss/2; i++) {
+			
+			screen.render(screen.xOffset+this.getX()+8, screen.yOffset+this.getY()+24+i*8, 8+6*32, Colours.get(-1, -1, -1, 255), 1, 1);
+			Font.render(items[i], screen, screen.xOffset+this.getX()+16, screen.yOffset+this.getY()+24+i*8, Colours.get(-1, -1, -1, 255), 1);
+			Font.render("3", screen, screen.xOffset+this.getX2()-8, screen.yOffset+this.getY()+24+i*8, Colours.get(-1, -1, -1, 255), 1);
+		}
+		
+		
+	}
+	
 	
 }

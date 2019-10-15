@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -66,6 +67,7 @@ public class StartMenu extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				
 				new Game().start();
+				ScreenController.removeMenu();
 				
 			}
 		});
