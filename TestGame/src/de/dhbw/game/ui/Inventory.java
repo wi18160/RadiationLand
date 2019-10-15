@@ -159,7 +159,8 @@ public class Inventory extends Interface{
 		int itemss = items.length;
 		
 		
-
+		//Test
+		
 		for(int i = 0; i<itemss/2; i++) {
 			
 			screen.render(screen.xOffset+this.getX()+8, screen.yOffset+this.getY()+24+i*8, 8+6*32, Colours.get(-1, -1, -1, 255), 1, 1);
