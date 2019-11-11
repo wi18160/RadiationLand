@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+
+.abschnitt-tutorial { /* section control */
+  display: block;
+  position: relative;
+  background-image: url(../img/bg-gifs_pixel.png);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+h4 { /* Überschrift How To Play */
+  font-family: "Press Start 2P", "avenir next", helvetica, sans-serif;
+  margin-left: 10vh;
+  padding-top: 5vh;
+  margin-top: 0;
+  font-size: 5vh;
+  color: white;
+  width: 500px;
+}
+  
+  
+.slideshow {
+  max-width: 65%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  height: 60vh;
+  margin: 0 auto;
+  background-color: rgba(112, 102, 70, 0.767);
+  position: relative;
+  text-align: center;
+}
+
+.mySlides div {
+  text-align: left;
+}
+
+
+
+/* Buttons Slider */
+.next {
+  right: 25vh;
+  bottom: 15vh;
+  position: absolute;
+  z-index: 100;
+}
+
+.prev {
+  right: 32vh;
+  bottom: 15vh;
+  position: absolute;
+  z-index: 100;
+}
+
+.btn {
+  background-color: DodgerBlue; 
+  border: none; 
+  color: white; 
+  padding: 8px 12px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+
+.text {
+  color: #000;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: -9vh;
+  left: 13vh;
+  height: 16vh;
+  width: 93vh;
+  z-index: 100;
+  font-family: "Press Start 2P", "avenir next", helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+
+
+.mySlides img {
+  height: 100%;
+}
+
+
+/* PLAYER DIALOGUE */
+
+.player {
+  position: absolute;
+  bottom: 9vh;
+  left: 14vh;
+  height: 28vh;
+}
+
+.ticker {
+  font-family: "Press Start 2P", "avenir next", helvetica, sans-serif;
+  padding-left: 2vh;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.sprechbox {
+  background-color: white;
+  position: absolute;
+  bottom: 12vh;
+  left: 40vh;
+  height: 19.5vh;
+  width: 110vh;
+  border-radius: 0.5em;
+	border: 3px solid black;
+  box-shadow: 0 0 0 0.3em grey inset;
+}
+
+
+
+
+
+

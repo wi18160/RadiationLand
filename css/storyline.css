@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+
+p  {
+  margin: 0;
+  padding-right: 10%;
+}
+
+.abschnitt-story {
+  background-image: url(../img/bg-storyline.png);
+  height: 100vh;
+	background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+.ticker-story {
+  font-family: "Press Start 2P", "avenir next", helvetica, sans-serif;
+  padding-left: 20vh;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding-top: 20vh;
+}
+
+
+#btn-story {
+  position: absolute;
+  left: 110vh;
+  right: auto;
+  bottom: 8vh;
+  background-color: grey;
+  border: black solid 1px;
+  box-shadow: 2px 2px 0px 2px black;
+  padding: 15px 30px 15px 30px;
+  font-weight: bold;
+}
+  #btn-story:hover {
+   background-color: silver;
+ }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/opener.css" type="text/css">
+  <link rel="stylesheet" href="css/storyline.css" type="text/css">
+  <link rel="stylesheet" href="css/tutorial.css" type="text/css">
+  <script language="javascript" type="text/javascript" src="javascript/animation.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <!-- OPENER -->
+
+  <section class="opener">
+    <main role="main">
+      <h1><span>Welcome</span></h1>
+      <div class="base" role="img" aria-labelledby="description">
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <h2>
+        <a href="#storyline" onclick="typeWriter0()">
+          <span class="press-start"> PRESS START </span>
+        </a>
+      </h2>
+    </main>
+  </section>
+
+
+
+  <!-- STORYLINE -->
+
+  <section class="abschnitt-story" id="storyline">
+
+    <p class="ticker-story" id="story-text"></p>
+    <a href="#tutorial">
+      <button id="btn-story">Go To 'HOW TO PLAY'</button>
+    </a>
+
+  </section>
+
+
+
+
+
+  <!-- TUTORIAL -->
+
+  <section class="abschnitt-tutorial" id="tutorial">
+
+    <h4>HOW TO PLAY</h4>
+
+    <!-- slideshow -->
+    <div class="slideshow">
+
+
+      <!-- slides -->
+      <div class="mySlides fade">
+        <img src='./img/1_wasd.gif' />
+        <div class="text">Hallo! Um dich im Spiel zu bewegen verwende folgende Tasten: </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src='./img/2_inventory.gif' />
+        <div class="text">Dein vorhandenes Inventar kannst du mit 'I' aufrufen. Die Tasten 1 - 6 sind für das Inventar vorbelegt. Mit der Taste 1 konsumierst du das erste Item im Inventar usw. Du kannst die Items auch verwenden, wenn das Inventar nicht sichtbar ist. Achte aber darauf, dass sich die Tastenbelegung verschieben kann, wenn ein Item verschwindet!</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src='./img/3_npctalk.gif' />
+        <div class="text">Du kannst einige Personen ansprechen. Probiere dies doch gleich im Spiel einmal aus indem du die Taste 'H' drückst.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src='./img/4_attack.gif' />
+        <div class="text">Nehm dich in Acht vor Zombies! Sie nehmen dir Leben weg. Du bekämpfst sie durch mehrmaliges Drücken der Leertaste. Du musst dabei deine Energieanzeige im Auge behalten.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src='./img/5_quests.jpg' />
+        <div class="text">Falls du mal deine Quests vergessen solltest, ist dies kein Problem. Drücke hierfür einfach die Taste 'Q' und du siehst sie alle auf einen Blick. Und nun viel Spaß beim Spielen!</div>
+      </div>
+
+
+
+    </div>
+
+
+    <!-- player -->
+    <img class="player" src="img/player.png">
+    <!-- slides button -->
+    <button class="btn prev" onclick="plusSlides(-1)"><</button>
+    <button class="btn next" onclick="plusSlides(1)">></button>
+
+    <div class="sprechbox">
+      <p class="ticker" id="demo"></p>
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
